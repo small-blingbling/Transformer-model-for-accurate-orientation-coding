@@ -116,5 +116,15 @@ After the masking process and evaluation, the results.mat file is generated. Thi
 
 The analysis runtime is 12.99 seconds.
 
+####  Rawdata ####
+=============================== 1. File structure ==========================
 
+Rawdata was stored in https://huggingface.co/datasets/small-blingbling/transformer-orientation-v1/tree/main
+
+This dataset contains raw response data from seven macaques (M1, M2, M3, M4, M5, M6, M7).The dataset is organized into the following structure:
+
+Rawdata/
+└── M[index]/
+	├──  G4_RspAvgOFFListTotal.mat # [spatial frequency * size, neuron, orientation, repeat]
+	└──  G4_RespAvg.mat # [144 * neuron], which is also the input data for the transformer model.
 
